@@ -1,14 +1,3 @@
-"
-"   ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗ ██████╗
-"   ██║   ██║██║████╗ ████║██╔══██╗██╔════╝██╔════╝
-"   ██║   ██║██║██╔████╔██║██████╔╝██║     ██║  ███╗
-"   ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     ██║   ██║
-"    ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗╚██████╔╝
-"     ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝
-"
-"   Customizable VimRC Generator: https://vimrc.org
-"   Configuration Generated on: August 08, 2018
-" ---------------------------------------------------
 set nocompatible
 " Variables                      {{{
 " --> define os specific variables
@@ -461,7 +450,7 @@ let NERDTreeIgnore = [ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$',
 nmap <leader>ntf <leader>nto<C-w>p:NERDTreeFind<CR>
 nmap <leader>ntc :NERDTreeClose<CR>
 nmap <leader>nto :NERDTreeFocus<CR>:vertical resize 25<CR>
-
+map <C-n> :NERDTreeToggle<CR> 
 " }}}
 
 " Terminal                       {{{
@@ -1682,13 +1671,7 @@ let g:startify_list_order = [
       \ ]
 
 " --> display a nice VIM ASCII text at the bottom of Startup screen
-let g:startify_custom_footer = [  '', '',
-      \  '    ██╗   ██╗ ██╗ ███╗   ███╗    ',
-      \  '    ██║   ██║ ██║ ████╗ ████║    ',
-      \  '    ██║   ██║ ██║ ██╔████╔██║    ',
-      \  '    ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║    ',
-      \  '     ╚████╔╝  ██║ ██║ ╚═╝ ██║    ',
-      \  '      ╚═══╝   ╚═╝ ╚═╝     ╚═╝    '  ]
+let g:startify_custom_footer = [  '' ]
 
 " --> allow Startup screen to be opened via <leader>as
 nmap <silent> <leader>as :Startify<CR>
@@ -1855,6 +1838,19 @@ endif
 
 " }}}
 
+" Ansible Config
+  Plug 'pearofducks/ansible-vim'
+" }}}
+"
+" Vagrant Config
+  Plug 'hashivim/vim-vagrant'
+ 
+" }}}
+
+" Terraform Config
+  Plug 'hashivim/vim-terraform'
+  
+" }}}
 call plug#end()
 colorscheme dracula
 let g:airline_theme='nova'
