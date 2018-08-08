@@ -206,6 +206,12 @@ set softtabstop=2               " when <BS>, pretend tab is removed, even if spa
 set expandtab                   " expand tabs, by default
 set nojoinspaces                " prevents two spaces after punctuation on join
 
+" --> Custom for full stack
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
 " --> disable wrapping of long lines and set line width to 80 characters
 set nowrap                      " don't wrap lines
 set linebreak                   " break long lines at words, when wrap is on
@@ -1851,9 +1857,30 @@ endif
   Plug 'hashivim/vim-terraform'
   
 " }}}
+"
+" Python IDE
+  Plug 'vim-syntastic/syntastic'
+  Plug 'nvie/vim-flake8'
+  Plug 'vim-scripts/indentpython.vim'
+
+  au BufNewFile,BufRead *.py
+      \ set tabstop=4 |
+      \ set softtabstop=4 |
+      \ set shiftwidth=4 |
+      \ set textwidth=79 |
+      \ set expandtab |
+      \ set autoindent |
+      \ set fileformat=unix
+" }}}
 call plug#end()
-colorscheme dracula
-let g:airline_theme='nova'
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+set background=dark
+
+" Python Settings
+let python_highlight_all=1
+syntax on
+
 " --> Personalize: allows customizations via a local configuration
 if filereadable(expand("~/.vimrc.local")) | source ~/.vimrc.local | endif
 
