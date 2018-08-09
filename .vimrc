@@ -1880,9 +1880,13 @@ colorscheme gruvbox
 let g:airline_theme='gruvbox'
 set background=dark
 
+" Ctrl P settings
+let g:ctrlp_working_path_mode = 0
+
 " Python Settings
 let python_highlight_all=1
 syntax on
+let g:pymode_rope=0
 
 " --> Personalize: allows customizations via a local configuration
 if filereadable(expand("~/.vimrc.local")) | source ~/.vimrc.local | endif
