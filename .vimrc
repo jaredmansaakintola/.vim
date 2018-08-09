@@ -1872,6 +1872,9 @@ endif
       \ set autoindent |
       \ set fileformat=unix
 " }}}
+" Auto Format
+  Plug 'Chiel92/vim-autoformat'
+" }}}
 call plug#end()
 colorscheme gruvbox
 let g:airline_theme='gruvbox'

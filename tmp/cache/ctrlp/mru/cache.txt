@@ -1,4 +1,6 @@
 /home/jared/.vim/.vimrc
+/home/jared/Sandbox/up/system/notification_email.xsl
+/home/jared/Sandbox/up/classes/config.xml
 /home/jared/Sandbox/up/classespy/API.py
 /usr/share/vim/vim81/doc/insert.txt
 /usr/share/vim/vim81/doc/cmdline.txt
