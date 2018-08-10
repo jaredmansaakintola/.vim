@@ -91,7 +91,6 @@ app/Repository/IndustryRepository.php
 app/Repository/MessageRepository.php
 app/Repository/PaymentRepository.php
 app/Repository/PermissionsRepository.php
-app/Thrift/ThriftAppointment.php
 app/Thrift/ThriftDMS.php
 app/Thrift/ThriftDocument.php
 app/Thrift/ThriftMessaging.php

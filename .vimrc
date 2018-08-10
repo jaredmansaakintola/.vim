@@ -1883,6 +1883,9 @@ set background=dark
 " Ctrl P settings
 let g:ctrlp_working_path_mode = 0
 
+" Set Fold Level Open
+au BufRead * normal zR
+
 " Python Settings
 let python_highlight_all=1
 syntax on
