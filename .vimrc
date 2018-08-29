@@ -414,7 +414,7 @@ let g:ctrlp_cache_dir = expand("~/.vim") . "/tmp/cache/ctrlp"
 if executable("ag") | let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""' | endif
 if executable("pt") | let g:ctrlp_user_command = 'pt %s -l --nocolor -g ""' | endif
 map <C-b> :CtrlPBuffer<CR>
-map <C-o> :CtrlP %:p:h<CR>
+" map <C-o> :CtrlP %:p:h<CR>
 nnoremap <leader>. :CtrlPTag<cr>
 
 " --> provide a feature-rich file explorer in a sidebar
